@@ -1,5 +1,4 @@
-Video Policy System
-===
+## About this project
 
 Heroku URL : [http://video-policy-system.herokuapp.com/](http://video-policy-system.herokuapp.com/)
 
