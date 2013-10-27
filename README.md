@@ -1,6 +1,8 @@
 Video Policy System
 ===
 
+Heroku URL : [http://video-policy-system.herokuapp.com/](http://video-policy-system.herokuapp.com/)
+
 Imagine you’re building a version of YouTube with 100 videos (but scalable to hundreds of thousands).  On your site each video has a “policy” per country.  The possible policies are monetize, free, and block.  (This is roughly how YouTube’s policy system works.)
 
 * Monetize – a video can be viewed, and can have ads run against it
