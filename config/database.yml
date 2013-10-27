@@ -1,7 +1,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: myapp_development
+  database: video-policy-system
   pool: 5
   password:
 
