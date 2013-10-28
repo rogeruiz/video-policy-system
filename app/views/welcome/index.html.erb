@@ -3,6 +3,11 @@
 <% @videos.each do |video| %>
   <div class="video-container">
     <img src="//placehold.it/400x200/&text=<%= video.title %>" alt="<%= video.title %>">
-    <p><%= video.title %></p>
+    <p>Video Title: <%= video.title %></p>
+    <ul>
+    <% video.systems.each do |sys| %>
+      <li><%= video.countries.find(sys.country_id).code %> | <%= video.policies.find(sys.policy_id).name %></li>
+    <% end %>
+    </ul>
   </div>
 <% end %>
