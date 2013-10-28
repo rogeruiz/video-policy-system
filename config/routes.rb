@@ -7,10 +7,10 @@ VideoPolicySystem::Application.routes.draw do
   root 'welcome#index'
 
   # Get the root based on Country Code
-  get ':country' => 'country#index'
+  get '/:country' => 'country#index'
 
   # Get the root based on Country Code and Video ID
-  get ':country/:id' => 'video#index'
+  get '/:country/:id' => 'video#index'
 
 
   # Example of regular route:
