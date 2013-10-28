@@ -1,1 +1,8 @@
 <h1>Hello, Video Policy System!</h1>
+
+<% @videos.each do |video| %>
+  <div class="video-container">
+    <img src="//placehold.it/400x200/&text=<%= video.title %>" alt="<%= video.title %>">
+    <p><%= video.title %></p>
+  </div>
+<% end %>
