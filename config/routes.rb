@@ -1,5 +1,5 @@
 VideoPolicySystem::Application.routes.draw do
-  get "welcome/index"
+  # get "welcome/index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -7,10 +7,10 @@ VideoPolicySystem::Application.routes.draw do
   root 'welcome#index'
 
   # Get the root based on Country Code
-  get '/:country' => 'country#index'
+  get '/country/:code' => 'country#index'
 
   # Get the root based on Country Code and Video ID
-  get '/:country/:id' => 'video#index'
+  get '/country/:code/video/:id' => 'video#index'
 
 
   # Example of regular route:
