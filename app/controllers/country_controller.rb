@@ -1,6 +1,9 @@
 class CountryController < ApplicationController
   def index
-    code = params[:code].upcase
+    redirect_to :root
+  end
+  def show
+    code = params[:id].upcase
     selected_country = Country.find_by(code: code)
     if selected_country
       @country = selected_country
@@ -15,16 +18,11 @@ class CountryController < ApplicationController
             data['country'] = sys.country.code
             data['policy'] = sys.policy.name
             @videos.push(data.clone)
-            # @policy.push(sys.policy.name)
-            break
-          else
-            next
           end
         end
       end
     else
       redirect_to :root
     end
-
   end
 end
