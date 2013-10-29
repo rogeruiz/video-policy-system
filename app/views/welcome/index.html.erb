@@ -6,7 +6,7 @@
     <p>Video Title: <%= video.title %></p>
     <ul>
     <% video.systems.each do |sys| %>
-      <li><%= sys.country.code %> | <%= sys.policy.name %></li>
+      <li><a href="/country/<%= sys.country.code.downcase %>"><%= sys.country.code %></a> | <%= sys.policy.name %></li>
     <% end %>
     </ul>
   </div>
