@@ -1,0 +1,11 @@
+<h1>Hello from <%= @country.name %>, Video Policy System!</h1>
+
+<div class="video-container">
+  <a href="/video/<%= @video.id %>"><img src="//placehold.it/400x200/&text=<%= @video.title %>" alt="<%= @video.title %>"></a>
+  <p>Video Title: <%= @video.title %></p>
+  <ul>
+  <% @video.systems.each do |sys| %>
+    <li><a href="/country/<%= sys.country.code.downcase %>"><%= sys.country.code %></a> | <%= sys.policy.name %></li>
+  <% end %>
+  </ul>
+</div>
